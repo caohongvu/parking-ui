@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking Management</title>
+    <link href="http://admin.spmgroup.vn/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/revenue-priceformula1.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <header class="main-header flex-column">
+        <div class="header-menu">
+            <ul class="nav nav-fill align-items-center" style="height: 50px;">
+                <li class="nav-item" style="border-left: 2px solid #fff;">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admins.html">QL nhân sự</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies.html">QL công ty - dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="revenue-index.html" style="background: black;">QL doanh thu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">QL thẻ xe - loại xe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monthlycards-viewlog.html">QL vé tháng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings-display.html">QL hệ thống</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checkinoutlogs-card.html">QL xe ra vào</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admins-updateprofile.html">Cập nhật tài khoản</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-submenu position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-submenu align-items-center d-flex justify-content-center"
+                            style="height: 50px;">
+                            <li class="nav-item" style="border-left: 2px solid #fff;">
+                                <a class="nav-link" href="revenue-index.html">Thống kê doanh thu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="revenue-priceformula1.html" style="color: #000; background: #fff;">CT TT theo công văn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="revenue-priceformula2.html">CT TT lũy tiến</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="revenue-priceformula3.html">CT tổng hợp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom-menu position-absolute" style="top: 0; right: 0;">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle d-flex flex-row align-items-center" data-toggle="dropdown">
+                            <img src="./image/index/spm_logo_2.png" alt="" class="user-img mr-2">
+                            <span>SPM group</span>
+                        </a>
+                        <ul class="dropdown-menu p-0">
+                            <li class="user-header">
+                                <img src="./image/index/spm_logo_2.png" alt="" class="img-circle-header">
+                                <p>SPM group</p>
+                            </li>
+                            <li class="user-footer d-flex flex-row-reverse p-2">
+                                <div class="user-logout">
+                                    <a href="#" class="btn btn-default btn-flat btn-logout">Đăng xuất</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content-wrapper">
+                        <section class="content-header d-flex justify-content-between align-items-center">
+                            <h1 class="m-0">CT TT theo công văn</h1>
+                            <ul class="breadcrump d-flex flex-row p-0 m-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>CT TT theo công văn</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="content">
+                            <div class="box box-update d-flex flex-column">
+                                <div class="box-header d-flex" style="padding: 10px;">
+                                    <i class="fas fa-pen-square" style="font-size: 18px;"></i>
+                                </div>
+                                <div class="box-body p-2">
+                                    <div class="form-body">
+                                        <form action="" class="d-flex flex-column">
+                                            <div class="form-group d-flex flex-row align-items-center">
+                                                <label for="night_start" class="m-0">Tính đêm bắt đầu từ:</label>
+                                                <input type="number" min="0" max="23" name="night_start"
+                                                    class="form-control mx-1">h
+                                                <label for="night_end" class="m-0 ml-4">Đến:</label>
+                                                <input type="number" min="0" max="23" name="night_end"
+                                                    class="form-control mx-1">h
+                                            </div>
+                                            <div class="form-group d-flex flex-row align-items-center">
+                                                <label for="time_day_night" class="m-0">Khoảng giao ngày + đêm:</label>
+                                                <input type="number" min="0" max="23" name="time_day_night"
+                                                    class="form-control mx-1">h
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="col-sm-6 pl-0">
+                                                    <div class="form-group d-flex flex-row align-items-center">
+                                                        <label for="vehicle_id" class="m-0">Tên loại xe:</label>
+                                                        <select name="vehicle_id" class="form-control ml-1"
+                                                            id="vehicleType" style="width: auto;">
+                                                            <option value="7" selected="selected">Xe tải thường
+                                                            </option>
+                                                            <option value="5">Xe con thường</option>
+                                                            <option value="3">Xe tay ga thường</option>
+                                                            <option value="1">Xe số thường</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group form-inline">
+                                                        <label for="normal_price" style="width: 100px;">Giá
+                                                            thường:</label>
+                                                        <input type="text" value="" name="normal_price"
+                                                            class="form-control txtMoney">
+                                                    </div>
+                                                    <div class="form-group form-inline">
+                                                        <label for="night_price" style="width: 100px;">Giá đêm:</label>
+                                                        <input type="text" value="" name="night_price"
+                                                            class="form-control txtMoney">
+                                                    </div>
+                                                    <div class="form-group form-inline">
+                                                        <label for="day_night_price" style="width: 100px;">Ngày +
+                                                            đêm:</label>
+                                                        <input type="text" value="" name="day_night_price"
+                                                            class="form-control txtMoney">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 offset-md-4">
+                                                <div class="form-group form-inline">
+                                                    <label for="over_minute">Bé hơn:</label>
+                                                    <input type="number" value="" min="1" max="60" name="over_minute"
+                                                        class="form-control mx-1">
+                                                    <label for="over_minute_price"
+                                                        style="margin-right: 60px;">Phút</label>
+                                                    <input type="text" value="" name="over_minute_price"
+                                                        class="form-control txtMoney">
+                                                </div>
+                                            </div>
+                                            <label for="">Vé tháng giới hạn giờ</label>
+                                            <div class="form-group form-inline">
+                                                <label for="monthly_card_time">Chu kỳ:</label>
+                                                <input type="number" value="" min="0" max="23" name="monthly_card_time"
+                                                    class="form-control mx-1"> h
+                                                <label for="monthly_card_time_price"
+                                                    style="margin-left: 30px; margin-right: 5px;">Giá</label>
+                                                <input type="text" value="" name="monthly_card_time_price"
+                                                    class="form-control txtMoney">
+                                            </div>
+                                            <div class="form-group button-group d-flex flex-row">
+                                                <div class="form-group" style="margin-right: 20px;">
+                                                    <input type="submit" value="Lưu" class="btn btn-primary"
+                                                        style="padding: 4px 12px;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="Quay lại" class="btn"
+                                                        style="padding: 4px 12px;" onclick="return back();">
+                                                </div>
+                                                <div class="cls"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer d-flex justify-content-between">
+        <div class="pull-left">
+            Copyright © 2019 <strong><a href="#">SPM group</a></strong>. All rights reserved.
+        </div>
+        <div class="pull-right">
+            <b>Version</b> 1.0
+        </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/fontawesome.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+</body>
+
+</html>

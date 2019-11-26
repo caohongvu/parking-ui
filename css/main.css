@@ -1,0 +1,21 @@
+main {
+    background-color: #ecf0f5;
+    min-height: 100%;
+}
+
+main .container {
+    padding: 0;
+}
+
+main .col {
+    padding: 0;
+}
+
+.box-search {
+    margin-bottom: 20px;
+}
+
+.box-search h5 {
+    margin: 0;
+    padding: 10px;
+}

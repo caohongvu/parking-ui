@@ -1,0 +1,16 @@
+form .form-control {
+    border-radius: 0;
+}
+
+.content-wrapper .box {
+    border-top-color: #CEA052;
+}
+
+
+.content .box-header {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+form label {
+    font-weight: 700;
+}
