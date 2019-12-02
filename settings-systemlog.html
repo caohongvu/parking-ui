@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking Management</title>
+    <link href="http://admin.spmgroup.vn/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/settings-systemlog.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <header class="main-header flex-column">
+        <div class="header-menu">
+            <ul class="nav nav-fill align-items-center" style="height: 50px;">
+                <li class="nav-item" style="border-left: 2px solid #fff;">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admins.html">QL nhân sự</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies.html">QL công ty - dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="revenue-index.html">QL doanh thu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">QL thẻ xe - loại xe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monthlycards-viewlog.html">QL vé tháng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings-display.html" style="background: black;">QL hệ thống</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checkinoutlogs-card.html">QL xe ra vào</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admins-updateprofile.html">Cập nhật tài khoản</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-submenu position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-submenu align-items-center d-flex justify-content-center"
+                            style="height: 50px;">
+                            <li class="nav-item" style="border-left: 2px solid #fff;">
+                                <a class="nav-link" href="settings-display.html">Cấu hình hiển thị</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="settings-order.html">Quản lý thu tiền xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="settings-permission.html">Phân quyền truy cập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="settings-systemlog.html"
+                                    style="color: #000; background: #fff;">Nhật ký hệ thống</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom-menu position-absolute" style="top: 0; right: 0;">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle d-flex flex-row align-items-center" data-toggle="dropdown">
+                            <img src="./image/index/spm_logo_2.png" alt="" class="user-img mr-2">
+                            <span>SPM group</span>
+                        </a>
+                        <ul class="dropdown-menu p-0">
+                            <li class="user-header">
+                                <img src="./image/index/spm_logo_2.png" alt="" class="img-circle-header">
+                                <p>SPM group</p>
+                            </li>
+                            <li class="user-footer d-flex flex-row-reverse p-2">
+                                <div class="user-logout">
+                                    <a href="#" class="btn btn-default btn-flat btn-logout">Đăng xuất</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content-wrapper">
+                        <section class="content-header d-flex justify-content-between align-items-center">
+                            <h1 class="m-0">Nhật ký hệ thống</h1>
+                            <ul class="breadcrump d-flex flex-row p-0 m-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Nhật ký hệ thống</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="content">
+                            <div class="box box-search d-flex flex-column" style="border-top-color: #CEA052;">
+                                <h5 class="accordion" style="border-bottom: 1px solid #f4f4f4;">Tìm kiếm</h5>
+                                <div class="panel">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="">Thao thác</label>
+                                            <select name="type" class="form-control" id="type">
+                                                <option>Tất cả</option>
+                                                <option>Đăng nhập</option>
+                                                <option>Đăng xuất</option>
+                                                <option>Cập nhật nhân viên</option>
+                                                <option>Tạo mới nhân viên</option>
+                                                <option>Xóa nhân viên</option>
+                                                <option>Cập nhật chức vụ</option>
+                                                <option>Tạo mới chức vụ</option>
+                                                <option>Xóa chức vụ</option>
+                                                <option>Tạo mới vé tháng</option>
+                                                <option">Chỉnh sửa vé tháng</option>
+                                                    <option">Xóa vé tháng</option>
+                                                        <option">Import danh sách vé tháng</option>
+                                                            <option">Export danh sách vé tháng</option>
+                                                                <option">Tạo mới thẻ chip</option>
+                                                                    <option">Cập nhật thẻ chip</option>
+                                                                        <option">Xóa thẻ chip</option>
+                                                                            <option">Import thẻ chip</option>
+                                                                                <option">Export thẻ chip</option>
+                                                                                    <option">Cập nhật CT TT theo công
+                                                                                        văn</option>
+                                                                                        <option">Cập nhật CT TT lũy tiến
+                                                                                            </option>
+                                                                                            <option">Cập nhật CT tổng
+                                                                                                hợp</option">
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Một ngày</label>
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Nhiều ngày</label>
+                                            <div class="dateFromToInputs d-flex justify-content-between">
+                                                <div class="form-group text">
+                                                    <input type="text" class="form-control" value="">
+                                                </div>
+                                                <span class="form_from_to_separator d-flex align-items-center">〜</span>
+                                                <div class="form-group text">
+                                                    <input type="text" class="form-control" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Giới hạn</label>
+                                            <select class="form-control" id="">
+                                                <option>10</option>
+                                                <option>20</option>
+                                                <option>50</option>
+                                                <option>80</option>
+                                                <option>100</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="box box-result">
+                                <table class="table table-hover" id="revenueIndexTable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Thao tác</th>
+                                            <th scope="col">Ngày tạo</th>
+                                            <th scope="col">Nhân viên</th>
+                                            <th scope="col">Nội dung</th>
+                                            <th scope="col">Máy tính</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div class="form-group button-group d-flex flex-row">
+                                    <div class="form-group">
+                                        <input type="submit" value="Xuất file Excel" class="btn btn-primary"
+                                            style="font-size: 14px;">
+                                    </div>
+                                </div>
+                                <div class="dataTables_paginate paging_bootstrap d-flex" style="min-height: 80px;">
+                                    <ul class="pagination my-4">
+                                        <li class="page-item active" aria-current="page">
+                                            <span class="page-link">
+                                                1
+                                                <span class="sr-only">(current)</span>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer d-flex justify-content-between">
+        <div class="pull-left">
+            Copyright © 2019 <strong><a href="#">SPM group</a></strong>. All rights reserved.
+        </div>
+        <div class="pull-right">
+            <b>Version</b> 1.0
+        </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/fontawesome.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/accordion.js"></script>
+</body>
+
+</html>

@@ -60,13 +60,13 @@
                                     style="color: #000; background: #fff;">Cấu hình hiển thị</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Quản lý thu tiền xe</a>
+                                <a class="nav-link" href="settings-order.html">Quản lý thu tiền xe</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Phân quyền truy cập</a>
+                                <a class="nav-link" href="settings-permission.html">Phân quyền truy cập</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nhật ký hệ thống</a>
+                                <a class="nav-link" href="settings-systemlog.html">Nhật ký hệ thống</a>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +100,80 @@
             <div class="row">
                 <div class="col">
                     <div class="content-wrapper">
-                        <h3 style="padding: 15px;">Waiting... !!</h3>
+                        <section class="content-header d-flex justify-content-between align-items-center">
+                            <h1 class="m-0">Cấu hình hiển thị</h1>
+                            <ul class="breadcrump d-flex flex-row p-0 m-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Cấu hình hiển thị</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="content">
+                            <div class="box box-update d-flex flex-column">
+                                <div class="box-header d-flex" style="padding: 10px;">
+                                    <i class="fas fa-pen-square" style="font-size: 18px;"></i>
+                                </div>
+                                <div class="box-body p-2">
+                                    <div class="form-body">
+                                        <form action="" class="d-flex flex-column">
+                                            <div class="form-group">
+                                                <label for="">Loại hình giữ xe</label>
+                                                <select class="form-control" id="">
+                                                    <option>Giữ xe miễn phí</option>
+                                                    <option>Giữ xe theo công văn</option>
+                                                    <option>Giữ xe tăng lũy tiến</option>
+                                                    <option>Giữ xe tổng hợp</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Tiền phạt khi mất thẻ</label>
+                                                <input type="text" class="form-control" id="" placeholder="21">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Tổng sức chứa</label>
+                                                <input type="text" class="form-control" id="" placeholder="12">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Tổng sức chứa xe oto</label>
+                                                <input type="text" class="form-control" id="" placeholder="21">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Tổng sức chứa xe máy</label>
+                                                <input type="text" class="form-control" id="" placeholder="21">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Sức chứa vé tháng</label>
+                                                <input type="text" class="form-control" id="" placeholder="3123">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Khi vé tháng hết hạn</label>
+                                                <select class="form-control" id="">
+                                                    <option>Tính tiền như vãng lai</option>
+                                                    <option>Chỉ cảnh báo hết hạn</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group button-group d-flex flex-row">
+                                                <div class="form-group" style="margin-right: 20px;">
+                                                    <input type="submit" value="Lưu" class="btn btn-primary"
+                                                        style="padding: 4px 12px;">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

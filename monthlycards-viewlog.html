@@ -56,20 +56,21 @@
                         <ul class="nav nav-submenu align-items-center d-flex justify-content-center"
                             style="height: 50px;">
                             <li class="nav-item" style="border-left: 2px solid #fff;">
-                                <a class="nav-link" href="monthlycards-viewlog.html" style="color: #000; background: #fff;">Xem nhật ký vé
+                                <a class="nav-link" href="monthlycards-viewlog.html"
+                                    style="color: #000; background: #fff;">Xem nhật ký vé
                                     tháng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Thông tin vé tháng</a>
+                                <a class="nav-link" href="monthlycards.html">Thông tin vé tháng</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gia hạn - thông tin hết hạn</a>
+                                <a class="nav-link" href="monthlycards-renewal.html">Gia hạn - thông tin hết hạn</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mất thẻ / Đổi mã thẻ</a>
+                                <a class="nav-link" href="monthlycards-disablelist.html">Mất thẻ / Đổi mã thẻ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Kích hoạt thẻ tháng</a>
+                                <a class="nav-link" href="monthlycards-active.html">Kích hoạt thẻ tháng</a>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +104,127 @@
             <div class="row">
                 <div class="col">
                     <div class="content-wrapper">
-                        <h3 style="padding: 15px;">Waiting... !!</h3>
+                        <section class="content-header d-flex justify-content-between align-items-center">
+                            <h1 class="m-0">Xem nhật ký vé tháng</h1>
+                            <ul class="breadcrump d-flex flex-row p-0 m-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Xem nhật ký vé tháng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="content">
+                            <div class="box box-search d-flex flex-column" style="border-top-color: #CEA052;">
+                                <h5 class="accordion" style="border-bottom: 1px solid #f4f4f4;">Tìm kiếm</h5>
+                                <div class="panel">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="">Thao tác</label>
+                                            <select class="form-control" id="">
+                                                <option>Tất cả</option>
+                                                <option>Tạo mới vé tháng</option>
+                                                <option>Chỉnh sửa vé tháng</option>
+                                                <option>Xóa vé tháng</option>
+                                                <option>Import danh sách vé tháng</option>
+                                                <option>Export danh sách vé tháng</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Tên loại xe</label>
+                                            <select class="form-control" id="">
+                                                <option>Tất cả</option>
+                                                <option>Xe đạp điện</option>
+                                                <option>Xe oto</option>
+                                                <option>Xe máy</option>
+                                                <option>Xe tay ga</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Nhiều ngày</label>
+                                            <div class="dateFromToInputs d-flex justify-content-between">
+                                                <div class="form-group text">
+                                                    <input type="text" class="form-control" value="">
+                                                </div>
+                                                <span class="form_from_to_separator d-flex align-items-center">〜</span>
+                                                <div class="form-group text">
+                                                    <input type="text" class="form-control" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Giới hạn</label>
+                                            <select class="form-control" id="">
+                                                <option>10</option>
+                                                <option>20</option>
+                                                <option>50</option>
+                                                <option>80</option>
+                                                <option>100</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="box box-result">
+                                <table class="table table-hover" id="revenueIndexTable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Thao tác</th>
+                                            <th scope="col">Ngày tạo</th>
+                                            <th scope="col">Nhân viên</th>
+                                            <th scope="col">ID vé</th>
+                                            <th scope="col">Mã thẻ</th>
+                                            <th scope="col">Biển số</th>
+                                            <th scope="col">Ngày đăng ký</th>
+                                            <th scope="col">Ngày hết hạn</th>
+                                            <th scope="col">Tên KH</th>
+                                            <th scope="col">CMND</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Địa chỉ</th>
+                                            <th scope="col">Nhãn hiệu</th>
+                                            <th scope="col">Tên loại xe</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div class="form-group button-group d-flex flex-row">
+                                    <div class="form-group">
+                                        <input type="submit" value="Xuất file Excel" class="btn btn-primary"
+                                            style="font-size: 14px;">
+                                    </div>
+                                </div>
+                                <div class="dataTables_paginate paging_bootstrap d-flex" style="min-height: 80px;">
+                                    <ul class="pagination my-4">
+                                        <li class="page-item active" aria-current="page">
+                                            <span class="page-link">
+                                                1
+                                                <span class="sr-only">(current)</span>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -123,6 +244,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/jquery-ui.js"></script>
+    <script src="./js/accordion.js"></script>
 </body>
 
 </html>
