@@ -1,5 +1,6 @@
 header{
     display: flex;
+    position: relative;
 }
 
 header .dropdown a:after {
@@ -109,4 +110,9 @@ header .navbar-custom-menu a:hover {
 
 .header-submenu .nav-submenu li:hover a {
     color: #000;
+}
+
+.advertisement-banner {
+    right: 10px;
+    top: 12rem;
 }
