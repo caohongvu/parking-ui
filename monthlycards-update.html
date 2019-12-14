@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/monthlycards.css">
+    <link rel="stylesheet" href="./css/monthlycards-update.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -105,7 +105,7 @@
                 <div class="col">
                     <div class="content-wrapper">
                         <section class="content-header d-flex justify-content-between align-items-center">
-                            <h1 class="m-0">Thông tin vé tháng</h1>
+                            <h1 class="m-0">Thêm mới</h1>
                             <ul class="breadcrump d-flex flex-row p-0 m-0">
                                 <li>
                                     <a href="#">
@@ -121,89 +121,88 @@
                                         <span>Thông tin vé tháng</span>
                                     </a>
                                 </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Thêm mới</span>
+                                    </a>
+                                </li>
                             </ul>
                         </section>
                         <section class="content">
-                            <div class="box box-search d-flex flex-column" style="border-top-color: #CEA052;">
-                                <h5 class="accordion" style="border-bottom: 1px solid #f4f4f4;">Tìm kiếm</h5>
-                                <div class="panel">
-                                    <form>
-                                        <div class="form-group text">
-                                            <label for="option1">Mã thẻ</label>
-                                            <input type="text" name="option1" class="form-control" id="option1">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Tên loại xe</label>
-                                            <select class="form-control" id="">
-                                                <option>Chọn loại xe</option>
-                                                <option>Xe đạp điện</option>
-                                                <option>Xe oto</option>
-                                                <option>Xe máy</option>
-                                                <option>Xe tay ga</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Hết hạn</label>
-                                            <select class="form-control" id="">
-                                                <option>Tất cả</option>
-                                                <option>Hết hạn</option>
-                                                <option>Còn hạn</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group text">
-                                            <label for="">Số ngày sắp hết hạn</label>
-                                            <input type="text" name="" class="form-control" id="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Giới hạn</label>
-                                            <select class="form-control" id="">
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>50</option>
-                                                <option>80</option>
-                                                <option>100</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
-                                        </div>
-                                    </form>
+                            <div class="box box-update d-flex flex-column">
+                                <div class="box-header d-flex" style="padding: 10px;">
+                                    <i class="fas fa-pen-square" style="font-size: 18px;"></i>
                                 </div>
-                            </div>
-                            <div class="box box-result">
-                                <table class="table table-hover" id="inOutTable">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" style="width: 50px;">ID</th>
-                                            <th scope="col">Mã thẻ</th>
-                                            <th scope="col">Số ngày</th>
-                                            <th scope="col">Biển số</th>
-                                            <th scope="col">Tên KH</th>
-                                            <th scope="col">CMND</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Tên loại xe</th>
-                                            <th scope="col">Ngày đăng ký</th>
-                                            <th scope="col">Ngày hết hạn</th>
-                                            <th scope="col" style="width: 100px;">Chỉnh sửa</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
-                                <div class="form-group button-group d-flex flex-row">
-                                    <div class="form-group">
-                                        <a href="monthlycards-update.html">
-                                            <input type="submit" value="Thêm mới" class="btn btn-success"
-                                                style="font-size: 14px; margin-right: 20px;">
-                                        </a>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" value="Import danh sách thẻ" class="btn btn-primary"
-                                            style="font-size: 14px; margin-right: 20px;">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" value="Export danh sách thẻ" class="btn btn-info"
-                                            style="font-size: 14px;">
+                                <div class="box-body p-2">
+                                    <div class="form-body">
+                                        <form>
+                                            <div class="form-group text">
+                                                <label for="option1">Mã thẻ</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Biển số</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Tên KH</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">CMND</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Email</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Công ty</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Nhãn hiệu</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Địa chỉ</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Phí đậu xe</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Tên loại xe</label>
+                                                <select class="form-control" id="" disabled="disabled">
+                                                    <option>Xe đạp điện</option>
+                                                    <option>Xe oto</option>
+                                                    <option>Xe máy</option>
+                                                    <option>Xe tay ga</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Ngày đăng ký</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="option1">Ngày hết hạn</label>
+                                                <input type="text" name="option1" class="form-control" id="option1">
+                                            </div>
+                                            <div class="form-group button-group d-flex flex-row">
+                                                <div class="form-group">
+                                                    <button onclick="saveData()" class="btn btn-primary"
+                                                        style="font-size: 14px; margin-right: 20px;">Lưu</button>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="Quay lại" class="btn btn-secondary"
+                                                        style="font-size: 14px;">
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

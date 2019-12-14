@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking Management</title>
+    <link href="http://admin.spmgroup.vn/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/admins-update.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <header class="main-header flex-column">
+        <div class="header-menu">
+            <ul class="nav nav-fill align-items-center" style="height: 50px;">
+                <li class="nav-item" style="border-left: 2px solid #fff;">
+                    <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admins.html" style="background: black;">QL nhân sự</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="companies.html">QL công ty - dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="revenue-index.html">QL doanh thu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">QL thẻ xe - loại xe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monthlycards-viewlog.html">QL vé tháng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings-display.html">QL hệ thống</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checkinoutlogs-card.html">QL xe ra vào</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admins-updateprofile.html">Cập nhật tài khoản</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-submenu position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-submenu align-items-center d-flex justify-content-center"
+                            style="height: 50px;">
+                            <li class="nav-item" style="border-left: 2px solid #fff;">
+                                <a class="nav-link" href="admins.html" style="color: #000; background: #fff;">Thông tin
+                                    nhân sự</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="admins-viewlog.html">Dò bảng chấm công</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="admins-type.html">Thông tin chức vụ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom-menu position-absolute" style="top: 0; right: 0;">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle d-flex flex-row align-items-center" data-toggle="dropdown">
+                            <img src="./image/index/spm_logo_2.png" alt="" class="user-img mr-2">
+                            <span>SPM group</span>
+                        </a>
+                        <ul class="dropdown-menu p-0">
+                            <li class="user-header">
+                                <img src="./image/index/spm_logo_2.png" alt="" class="img-circle-header">
+                                <p>SPM group</p>
+                            </li>
+                            <li class="user-footer d-flex flex-row-reverse p-2">
+                                <div class="user-logout">
+                                    <a href="#" class="btn btn-default btn-flat btn-logout">Đăng xuất</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content-wrapper">
+                        <section class="content-header d-flex justify-content-between align-items-center">
+                            <h1 class="m-0">Thêm mới</h1>
+                            <ul class="breadcrump d-flex flex-row p-0 m-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Thông tin nhân sự</span>
+                                    </a>
+                                </li>
+                                <li class="li-between">
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Thêm mới</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="content">
+                            <div class="box box-update d-flex flex-column">
+                                <div class="box-header d-flex" style="padding: 10px;">
+                                    <i class="fas fa-pen-square" style="font-size: 18px;"></i>
+                                </div>
+                                <div class="box-body p-2">
+                                    <div class="form-body">
+                                        <form>
+                                            <div class="form-group text">
+                                                <label for="">Họ tên*</label>
+                                                <input type="text" name="" class="form-control" id="">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="">Tài khoản*</label>
+                                                <input type="text" name="" class="form-control" id="">
+                                            </div>
+                                            <div class="form-group text">
+                                                <label for="">Mật khẩu*</label>
+                                                <input type="text" name="" class="form-control" id="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Chức vụ*</label>
+                                                <select class="form-control" id="">
+                                                    <option>Ca trưởng</option>
+                                                    <option>Admin1</option>
+                                                    <option>Nhân viên1</option>
+                                                    <option>Quản lý</option>
+                                                    <option>Admin</option>
+                                                    <option>Nhân viên</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Giới tính</label>
+                                                <select class="form-control" id="">
+                                                    <option>Nam</option>
+                                                    <option>Nữ</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group text company" style="font-weight: 300;">
+                                                <label for="">Chọn công ty - Dự án</label>
+                                                <div class="form-group checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        Cong ty 286
+                                                    </label>
+                                                </div>
+                                                <div class="form-group checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        cty 1
+                                                    </label>
+                                                    <div class="subCheckbox subCheckbox-1">
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            Nguyen Kiem
+                                                        </label>
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            !8 TTC
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        cty 2
+                                                    </label>
+                                                    <div class="subCheckbox subCheckbox-1">
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            Du an 21
+                                                        </label>
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            Du an 22
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group checkbox">
+                                                    <label for="">
+                                                        <input type="checkbox">
+                                                        cty 3
+                                                    </label>
+                                                    <div class="subCheckbox subCheckbox-1">
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            Du an 31
+                                                        </label>
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            Du an 32
+                                                        </label>
+                                                        <label for="">
+                                                            <input type="checkbox">
+                                                            Du an 33
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group button-group d-flex flex-row">
+                                                <div class="form-group">
+                                                    <button onclick="saveData()" class="btn btn-primary"
+                                                        style="font-size: 14px; margin-right: 20px;">Lưu</button>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="Quay lại" class="btn btn-secondary"
+                                                        style="font-size: 14px;">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer d-flex justify-content-between">
+        <div class="pull-left">
+            Copyright © 2019 <strong><a href="#">SPM group</a></strong>. All rights reserved.
+        </div>
+        <div class="pull-right">
+            <b>Version</b> 1.0
+        </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/fontawesome.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/accordion.js"></script>
+</body>
+
+</html>

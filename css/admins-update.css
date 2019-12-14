@@ -1,0 +1,22 @@
+.company label {
+    font-size: 15px;
+}
+
+.company .checkbox label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.company .checkbox label input {
+    margin-right: 8px;
+}
+
+.company .subCheckbox {
+    margin-left: 20px;
+}
+
+label {
+    font-weight: 700;
+}
