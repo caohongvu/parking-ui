@@ -23,8 +23,8 @@ $(document).ready(function () {
             var newRow = rowTemplate.replace("#id", v
                     .order_id).replace("#STT",
                     v.card_stt).replace("#cardCode", v.card_code).replace("#timeIn", v
-                    .checkin_time)
-                .replace("#timeOut", v.checkout_time).replace("#numberPlate", v
+                    .checkinTimeInFormat)
+                .replace("#timeOut", v.checkoutTimeInFormat).replace("#numberPlate", v
                     .car_number);
             newRow = newRow.replace("#staffIn", v.admin_checkin_name).replace(
                 "#vehicleCode", v
